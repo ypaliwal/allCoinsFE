@@ -2,6 +2,23 @@
     margin-top: 3em;
 }
 
+.table_heading_row  td {
+    text-align: center;
+    font-weight: 500;
+    border-bottom: solid 1px grey;
+}
+
+.table_data_row td {
+    text-align: center;
+    /*font-weight: 500;*/
+    /*border-bottom: solid 1px grey;*/
+}
+
+h5 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
 .grey_txt {
     color: #888787;
 }

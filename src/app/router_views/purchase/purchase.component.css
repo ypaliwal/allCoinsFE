@@ -22,12 +22,12 @@
 }
 
 .submit_btn {
-   background-color: #ee6e73;
+   background-color: #1b1b1b;
    transition: background-color 0.5s ease;
  }
 
  .submit_btn:hover {
-   background-color: #ff959a;
+   background-color: #3b3b3b;
  }
 
  .formInput {

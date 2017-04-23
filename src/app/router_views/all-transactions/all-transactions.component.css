@@ -1,0 +1,17 @@
+h4 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.text_spacer {
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.testCss th {
+    text-align: center;
+}
+
+.transactions_all td {
+    text-align: center;
+}
