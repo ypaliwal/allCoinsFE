@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { APICallsService } from '../../services/apicalls.service';
 
@@ -9,10 +10,15 @@ import { APICallsService } from '../../services/apicalls.service';
 })
 export class LandingComponent implements OnInit {
 
-  constructor(private _apiSrv: APICallsService) { }
+  constructor(private _apiSrv: APICallsService,
+              private _router: Router) { }
 
   ngOnInit() {
     this._apiSrv.getCCYPrices();
+  }
+
+  goToDeposit() {
+    this._router.navigate(['purchase']);
   }
 
 }

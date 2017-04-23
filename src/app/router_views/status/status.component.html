@@ -1,0 +1,19 @@
+<div class="container info_panel">
+  <div class="row">
+    <div class="col s10 offset-s1 center-align">
+      <h4 class="grey_txt">Listing of All Available Portfolios</h4>
+      <p class="grey_txt">See all available crypto-currency portfolios available via Sigma Coins.</p>
+      <br>
+      <h5 class="grey_txt">Top 5 Crypto-Currencies</h5>
+      <p class="grey_txt">% Weighted by Market Capitalization</p>
+      <table>
+        <tr class="table_heading_row">
+          <td *ngFor="let item of mktcapWeightedRatioTitles">{{item}}</td>
+        </tr>
+        <tr class="table_data_row">
+          <td *ngFor="let item of mktcapWeightedRatioValues">{{item}}%</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

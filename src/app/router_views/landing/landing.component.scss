@@ -1,0 +1,68 @@
+.logo {
+  width: 20%;
+  display: block;
+  margin: auto;
+  margin-top: 4em;
+}
+
+.info_panel {
+  background: rgba(255, 255, 255, 0.81);
+  margin-top: 3em;
+  margin-bottom: 25em;
+
+  .get_started {
+    margin-top: 4em; 
+  }
+}
+
+ .get_started_btn {
+   background-color: #ee6e73;
+   transition: background-color 0.5s ease;
+ }
+
+ .get_started_btn:hover {
+   background-color: #ff959a;
+ }
+
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, -1000px);
+  }
+}
+.bubble-container {
+  position: fixed;
+  top: 3em;
+  left: 8em;
+  width: 100%;
+  min-height: 100%;
+  transform-style: preserve-3d;
+  z-index: -5;  
+}
+.bubble-wrap {
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  perspective: 600px;
+}
+.bubble {
+  position: absolute;
+  background: black;
+  opacity: .7;
+  border-radius: 50%;
+  animation: move 3s infinite;
+  
+}
+
+@for $i from 1 through 100 {
+  .bubble:nth-child(#{$i}){
+     $size: random(30)+px;
+     height: $size;
+     width: $size;
+     animation-delay: -$i * .2s;
+     transform: translate3d( (random(1000) * 1px),  (random(1000) * 1px), (random(2000) * 1px));
+     background: hsl( random(360) , 70%, 50%);
+  }
+ 
+}

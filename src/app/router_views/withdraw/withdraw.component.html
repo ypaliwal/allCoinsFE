@@ -1,0 +1,17 @@
+<div class="container info_panel">
+  <div class="row">
+    <div class="col s10 offset-s1 center-align">
+      <h4 class="grey_txt">Withdraw Sigma Coins</h4>
+      <p class="grey_txt text_spacer">Fill out the form below to get started.</p>
+
+      <p class="grey_txt">Withdrawal Amount</p>
+      <input class="formInput" type="text" placeholder="" [(ngModel)]="withdrawal_amt">
+      <br>
+      <p class="grey_txt">Hash of Transaction Account</p>
+      <input class="formInput" type="text" placeholder="" [(ngModel)]="transaction_account">
+      <br>
+      <a class="waves-effect waves-light btn submit_btn" (click)="submitWithdrawal()">Submit</a>
+    </div>
+  </div>
+</div>
+

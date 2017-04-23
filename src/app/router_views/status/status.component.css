@@ -1,0 +1,41 @@
+.row {
+    margin-top: 3em;
+}
+
+.grey_txt {
+    color: #888787;
+}
+
+.text_spacer {
+    margin-bottom: 3em;
+}
+   
+.formInput {
+   max-width: 20em; 
+}
+
+.purchase_curr {
+    display: block;
+    width: 20em;
+    margin: auto;
+    border: solid 1px #a8a6a6;
+}
+
+.submit_btn {
+   background-color: #ee6e73;
+   transition: background-color 0.5s ease;
+ }
+
+ .submit_btn:hover {
+   background-color: #ff959a;
+ }
+
+ .formInput {
+   transition: border-bottom 0.5s ease;
+   transition: box-shadow 0.5s ease;
+ }
+
+.formInput:focus {
+    border-bottom: 1px solid rgba(250, 95, 83, 0.62) !important;
+    box-shadow: 0 1px 0 0 rgba(250, 95, 83, 0.62) !important;
+}
