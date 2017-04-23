@@ -3,9 +3,11 @@
     <div class="col s10 offset-s1 center-align">
       <h4 class="grey_txt">Listing of All Available Portfolios</h4>
       <p class="grey_txt">See all available crypto-currency portfolios available via Sigma Coins.</p>
+      
+      <!-- MARKET CAP WEIGHTED -->
       <br>
-      <h5 class="grey_txt">Top 5 Crypto-Currencies</h5>
-      <p class="grey_txt">% Weighted by Market Capitalization</p>
+      <h5 class="grey_txt">Top 5 Crypto-Currencies - By Market Cap</h5>
+      <!--<p class="grey_txt">% Weighted by Market Capitalization</p>-->
       <table>
         <tr class="table_heading_row">
           <td *ngFor="let item of mktcapWeightedRatioTitles">{{item}}</td>
@@ -14,6 +16,48 @@
           <td *ngFor="let item of mktcapWeightedRatioValues">{{item}}%</td>
         </tr>
       </table>
+
+      <hr>
+      
+      <!-- LOW RISK WEIGHTED -->
+      <br>
+      <h5 class="grey_txt">Top 5 Crypto-Currencies - By Low Risk</h5>
+      <!--<p class="grey_txt">% Weighted by Low Risk/Volatility</p>-->
+      <table>
+        <tr class="table_heading_row">
+          <td *ngFor="let item of highRiskRatioTitles">{{item}}</td>
+        </tr>
+        <tr class="table_data_row">
+          <td *ngFor="let item of highRiskRatioValues">{{item}}%</td>
+        </tr>
+      </table>
+
+      <!-- MID RISK WEIGHTED -->
+      <br>
+      <h5 class="grey_txt">Top 5 Crypto-Currencies - By Medium Risk</h5>
+      <!--<p class="grey_txt">% Weighted by Medium Risk/Volatility</p>-->
+      <table>
+        <tr class="table_heading_row">
+          <td *ngFor="let item of midRiskRatioTitles">{{item}}</td>
+        </tr>
+        <tr class="table_data_row">
+          <td *ngFor="let item of midRiskRatioValues">{{item}}%</td>
+        </tr>
+      </table>
+
+      <!-- HIGH RISK WEIGHTED -->
+      <br>
+      <h5 class="grey_txt">Top 5 Crypto-Currencies - By High Risk</h5>
+      <!--<p class="grey_txt">% Weighted by High Risk/Volatility</p>-->
+      <table>
+        <tr class="table_heading_row">
+          <td *ngFor="let item of lowRiskRatioTitles">{{item}}</td>
+        </tr>
+        <tr class="table_data_row">
+          <td *ngFor="let item of lowRiskRatioValues">{{item}}%</td>
+        </tr>
+      </table>
+
     </div>
   </div>
 </div>
